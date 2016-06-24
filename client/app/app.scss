@@ -4,6 +4,11 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
 
+@font-face {
+  font-family: "cabernet";
+  src: url(../assets/CabernetJFRegularPro.woff) format('woff');
+}
+
 /**
  * App-wide Styles
  */
@@ -20,3 +25,31 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'main/main.scss';
 @import 'modal/modal.scss';
 // endinjector
+
+html {
+  background: url('../assets/images/main-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+body {
+  background: none;
+  font-family: 'cabernet';
+}
+
+.main {
+  height: 30em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  div {
+    margin: 10px 0;
+  }
+}
+
